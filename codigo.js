@@ -314,7 +314,7 @@ function treinarantebraco(nomeExercicio) {
     } else {
         console.log("Não pode treinar: energia insuficiente!");
     }
-}- treinar tricips!\n" + "5 - treinar biceps!\n" + "6 - treinar antebraco!\n" + "7 - treinar abdomen!\n" + "8 - treinar quadriceps!\n" + "9 - treinar posterior!\n" + "10 - treinar gluteo!\n" + "11 - treinar panturilha!\n" + "0 - sair\n" + "12 - descansar\n" + "Digite o número de qual músculo você gostaria de começar:" );
+}- treinar triceps!\n" + "5 - treinar biceps!\n" + "6 - treinar antebraco!\n" + "7 - treinar abdomen!\n" + "8 - treinar quadriceps!\n" + "9 - treinar posterior!\n" + "10 - treinar gluteo!\n" + "11 - treinar panturilha!\n" + "0 - sair\n" + "12 - descansar\n" + "Digite o número de qual músculo você gostaria de começar:" );
 
 if(typeof escolha == "string"){ escolha = escolha.toLowerCase()} if(escolha == "1"){ menu.menucostas(); }else if(escolha == "2"){ menu.menupeito(); }else if(escolha == "3"){ menu.menuombro(); }else if(escolha == "4"){ menu.menutriceps(); }else if(escolha == "5"){ menu.menubiceps(); }else if(escolha == "6"){ menu.menuantebraco(); }else if(escolha == "7"){ menu.menuabdomen(); }else if(escolha == "8"){ menu.menuquadriceps(); }else if(escolha == "9"){ menu.menuposterior(); }else if(escolha == "10"){ menu.menugluteo(); }else if(escolha == "11"){ menu.menupanturilha(); }else if( escolha == "12"){ descansar(); }else if ( escolha == "0"){ console.log("Saindo do jogo!") }else{ console.log("Opção invalida!") }
 
