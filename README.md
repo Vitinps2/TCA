@@ -95,6 +95,26 @@ menupeito(){
 	console.log("Exercicio invalido!");
         } 
       }
+	   menutriceps(){
+        let exercicio = prompt( 
+          "Escolha seu exercicio para o triceps!\n" +
+          "1 - Triceps puley\n" +
+          "2 - Triceps Francês\n" +
+          "3 - Triceps testa\n" 
+        );
+        if(exercicio == "1"){
+          treinartriceps("Triceps puley");
+        }
+        else if(exercicio == "2"){
+          treinartriceps("Triceps Francês");
+        }
+        else if(exercicio == "3"){
+          treinartriceps("Triceps testa");
+        }
+        else{
+	console.log("Exercicio invalido!");
+          } 
+        }
   }
   
 let  menu = new Meutreino()
@@ -128,7 +148,7 @@ if(escolha == "1"){
 }else if(escolha == "3"){
 	menu.menuombro();
 }else if(escolha == "4"){
-	treinartriceps();
+	menu.menutriceps();
 }else if(escolha == "5"){
 	treinarbiceps();
 }else if(escolha == "6"){
@@ -218,15 +238,16 @@ jogador.energia -=5;
   console.log("Não pode treinar: energia insuficiente!");
     }
   }
-function treinartriceps(){
+function treinartriceps(nomeExercicio){
 if( jogador.energia >= 5 ){
 jogador.triceps ++;
 jogador.energia -=5;
-console.log( "Pode treinar")
-}else{
-console.log("Não pode treinar")
-	}
-}
+console.log( "Exercício realizado:", nomeExercicio);
+  console.log("Treino concluído");
+  }else{
+  console.log("Não pode treinar: energia insuficiente!");
+    }
+  }
 function treinarbiceps(){
 if( jogador.energia >= 5){
 jogador.biceps ++;
