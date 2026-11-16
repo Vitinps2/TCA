@@ -74,7 +74,7 @@ console.log("Obrigado por jogar!")
 console.log("Opção invalida!")
 }
 
-class Meutreino{
+class Menutreino{
 
   menucostas(){
     let exercicio = prompt( 
