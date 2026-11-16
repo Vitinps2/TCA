@@ -42,6 +42,8 @@ escolha = prompt( "Bem vindo a escolha de músculos!\n" +
 "Digite o número de qual músculo você gostaria de começar:"
 );
 
+if(typeof escolha == "string"){
+  escolha = escolha.toLowerCase()}
 if(escolha == "1"){
 	menu.menucostas();
 }else if(escolha == "2"){
