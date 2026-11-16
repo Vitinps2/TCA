@@ -48,9 +48,9 @@ if(escolha == "1"){
 }else if(escolha == "3"){
 	treinarombro();
 }else if(escolha == "4"){
-	treinartricepes();
+	treinartriceps();
 }else if(escolha == "5"){
-	treinarbicepes();
+	treinarbiceps();
 }else if(escolha == "6"){
 	treinarantibraco();
 }else if(escolha == "7"){
@@ -75,8 +75,8 @@ console.log("nome", jogador.nome);
 console.log("costas", jogador.costas);
 console.log("peito", jogador.peito);
 console.log("ombro", jogador.ombro);
-console.log("tricipes", jogador.tricipes);
-console.log("bicepes", jogador.bicepes);
+console.log("tricipes", jogador.tricips);
+console.log("bicepes", jogador.biceps);
 console.log("antibraco", jogador.antibraco);
 console.log("abdomen", jogador.abdomen);
 console.log("quadricipes", jogador.quadricipes);
@@ -93,9 +93,9 @@ if(escolha == "1"){
 }else if(escolha == "3"){
 	treinarombro();
 }else if(escolha == "4"){
-	treinartricepes();
+	treinartriceps();
 }else if(escolha == "5"){
-	treinarbicepes();
+	treinarbiceps();
 }else if(escolha == "6"){
 	treinarantibraco();
 }else if(escolha == "7"){
@@ -120,8 +120,8 @@ console.log("nome", jogador.nome);
 console.log("costas", jogador.costas);
 console.log("peito", jogador.peito);
 console.log("ombro", jogador.ombro);
-console.log("tricipes", jogador.tricipes);
-console.log("bicepes", jogador.bicepes);
+console.log("tricipes", jogador.tricips);
+console.log("bicepes", jogador.biceps);
 console.log("antibraco", jogador.antibraco);
 console.log("abdomen", jogador.abdomen);
 console.log("quadricipes", jogador.quadricipes);
@@ -176,7 +176,7 @@ console.log( "Pode treinar")
 console.log("Não pode treinar")
 	}
 }
-function treinartricepes(){
+function treinartriceps(){
 if( jogador.energia >= 5 ){
 jogador.tricepes ++;
 jogador.energia -=5;
@@ -185,7 +185,7 @@ console.log( "Pode treinar")
 console.log("Não pode treinar")
 	}
 }
-function treinarbicepes(){
+function treinarbiceps(){
 if( jogador.energia >= 5){
 jogador.bicepes ++;
 jogador.energia -=5;
