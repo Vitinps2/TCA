@@ -23,6 +23,7 @@ class novojogador {
 }
 let jogador = new novojogador(nome, 100, 0, 0, 0, 0, 0, 0, 0, 0 , 0, 0, 0)
 let escolha = "";
+while( escolha != "0"){
 
 escolha = prompt( "Bem vindo a escolha de músculos!\n" +
  "1 - treinar costas!\n"+
@@ -70,12 +71,12 @@ console.log("Obrigado por jogar!")
 }else{
 console.log("Opção invalida!")
 }
-console.clear()
+console.clear();
 console.log("nome", jogador.nome);
 console.log("costas", jogador.costas);
 console.log("peito", jogador.peito);
 console.log("ombro", jogador.ombro);
-console.log("tricipes", jogador.tricips);
+console.log("tricipes", jogador.triceps);
 console.log("bicepes", jogador.biceps);
 console.log("antibraco", jogador.antibraco);
 console.log("abdomen", jogador.abdomen);
@@ -85,52 +86,6 @@ console.log("gluteo", jogador.gluteo);
 console.log("panturilha", jogador.panturilha);
 console.log("energia", jogador.energia);
 }
-
-if(escolha == "1"){
-	treinarcostas();
-}else if(escolha == "2"){
-	treinarpeito();
-}else if(escolha == "3"){
-	treinarombro();
-}else if(escolha == "4"){
-	treinartriceps();
-}else if(escolha == "5"){
-	treinarbiceps();
-}else if(escolha == "6"){
-	treinarantibraco();
-}else if(escolha == "7"){
-	treinarabdomen();
-}else if(escolha == "8"){
-	treinarquadricipes();
-}else if(escolha == "9"){
-	treinarposterior();
-}else if(escolha == "10"){
-	treinargluteo();
-}else if(escolha == "11"){	
-	treinarpanturilha();
-}else if( escolha == "12"){
-  descansar();
-}else if ( escolha == "0"){
-console.log("Obrigado por jogar!")
-}else{
-console.log("Opção invalida!")
-}
-console.clear()
-console.log("nome", jogador.nome);
-console.log("costas", jogador.costas);
-console.log("peito", jogador.peito);
-console.log("ombro", jogador.ombro);
-console.log("tricipes", jogador.tricips);
-console.log("bicepes", jogador.biceps);
-console.log("antibraco", jogador.antibraco);
-console.log("abdomen", jogador.abdomen);
-console.log("quadricipes", jogador.quadricipes);
-console.log("posterior", jogador.posterior);
-console.log("gluteo", jogador.gluteo);
-console.log("panturilha", jogador.panturilha);
-console.log("energia", jogador.energia);
-}
-
 function treinarcostas(){
 if( jogador.energia >= 10){
 jogador.costas = jogador.costas +1;
