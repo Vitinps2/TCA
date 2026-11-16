@@ -28,8 +28,8 @@ escolha = prompt( "Bem vindo a escolha de músculos!\n" +
  "1 - treinar costas!\n"+
  "2 - treinar peito!\n" + 
 "3 - treinar ombro!\n" +
- "4 - treinar tricipes!\n" +
- "5 - treinar bicepes!\n" + 
+ "4 - treinar tricips!\n" +
+ "5 - treinar biceps!\n" + 
 "6 - treinar antibraco!\n" + 
 "7 - treinar abdomen!\n" + 
 "8 - treinar quadricipes!\n" + 
@@ -176,9 +176,9 @@ console.log( "Pode treinar")
 console.log("Não pode treinar")
 	}
 }
-function treinartriceps(){
+function treinartrices(){
 if( jogador.energia >= 5 ){
-jogador.tricepes ++;
+jogador.triceps ++;
 jogador.energia -=5;
 console.log( "Pode treinar")
 }else{
@@ -187,7 +187,7 @@ console.log("Não pode treinar")
 }
 function treinarbiceps(){
 if( jogador.energia >= 5){
-jogador.bicepes ++;
+jogador.biceps ++;
 jogador.energia -=5;
 console.log( "Pode treinar")
 }else{
