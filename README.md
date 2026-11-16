@@ -175,6 +175,26 @@ menupeito(){
 	console.log("Exercicio invalido!");
                 } 
               }
+			   menugluteo(){
+                              let exercicio = prompt( 
+                                "Escolha seu exercicio para o gluteo!\n" +
+                                "1 - Bulgaro\n" +
+                                "2 - Afundo\n" +
+                                "3 - Elevação pélvica\n" 
+                              );
+                              if(exercicio == "1"){
+                                treinargluteo("Bulgaro");
+                              }
+                              else if(exercicio == "2"){
+                                treinargluteo("Afundo");
+                              }
+                              else if(exercicio == "3"){
+                                treinargluteo("Elevação pélvica");
+                              }
+                              else{
+	console.log("Exercicio invalido!");
+                                } 
+                              }
 			   menupanturilha(){
                 let exercicio = prompt( 
                   "Escolha seu exercicio para a panturilha!\n" +
@@ -195,7 +215,7 @@ menupeito(){
 	console.log("Exercicio invalido!");
                   } 
                 }
-				menuquadricips(){
+				menuquadriceps(){
                   let exercicio = prompt( 
                     "Escolha seu exercicio para o quadriceps!\n" +
                     "1 -  Agachamento no hack pendulo\n" +
@@ -335,20 +355,22 @@ if( jogador.energia >= 10){
 jogador.quadriceps ++;
 jogador.panturilha += 0.5;
 jogador.energia -=10;
-console.log( "Pode treinar")
+console.log( "Exercício realizado:", nomeExercicio);
+console.log("Treino concluído");
 }else{
-console.log("Não pode treinar")
-	}
+console.log("Não pode treinar: energia insuficiente!");
+  }
 }
 function treinarposterior(nomeExercicio){
 if( jogador.energia >= 10){
 jogador.posterior ++;
 jogador.gluteo += 0.5;
 jogador.energia -=10;
-console.log( "Pode treinar")
+console.log( "Exercício realizado:", nomeExercicio);
+console.log("Treino concluído");
 }else{
-console.log("Não pode treinar")
-	}
+console.log("Não pode treinar: energia insuficiente!");
+  }
 }
 function treinarombro(nomeExercicio){
 if( jogador.energia >= 5){
@@ -374,56 +396,53 @@ function treinarbiceps(nomeExercicio){
 if( jogador.energia >= 5){
 jogador.biceps ++;
 jogador.energia -=5;
-console.log( "Pode treinar")
-  console.log( "Exercício realizado:", nomeExercicio);
-  console.log("Treino concluído");
-  }else{
-  console.log("Não pode treinar: energia insuficiente!");
-    }
+console.log( "Exercício realizado:", nomeExercicio);
+console.log("Treino concluído");
+}else{
+console.log("Não pode treinar: energia insuficiente!");
   }
+}
 function treinarantebraco(nomeExercicio){
   if( jogador.energia >= 5){
   jogador.antebraco ++;
   jogador.biceps += 0.5;
   jogador.energia -= 5;
-  console.log( "Pode treinar")
   console.log( "Exercício realizado:", nomeExercicio);
-  console.log("Treino concluído");
-  }else{
-  console.log("Não pode treinar: energia insuficiente!");
-    }
+console.log("Treino concluído");
+}else{
+console.log("Não pode treinar: energia insuficiente!");
   }
-function treinargluteo(nomeExercício){
+}
+function treinargluteo(nomeExercicio){
 if( jogador.energia >= 10){
 jogador.gluteo ++;
 jogador.energia -=10;
-console.log( "Pode treinar")
-  console.log( "Exercício realizado:", nomeExercicio);
-  console.log("Treino concluído");
-  }else{
-  console.log("Não pode treinar: energia insuficiente!");
-    }
+console.log( "Exercício realizado:", nomeExercicio);
+console.log("Treino concluído");
+}else{
+console.log("Não pode treinar: energia insuficiente!");
   }
+}
 function treinarpanturilha(nomeExercicio){
 if( jogador.energia >= 5){
 jogador.panturilha ++;
 jogador.energia -=5;
-console.log( "Pode treinar")
+console.log( "Exercício realizado:", nomeExercicio);
+console.log("Treino concluído");
 }else{
-console.log("Não pode treinar")
-	}
+console.log("Não pode treinar: energia insuficiente!");
+  }
 }
-function treinarabdomen(nomeExercio){
+function treinarabdomen(nomeExercicio){
 if( jogador.energia >= 5){
 jogador.abdomen ++;
 jogador.energia -=5;
-console.log( "Pode treinar")
-  console.log( "Exercício realizado:", nomeExercicio);
-  console.log("Treino concluído");
-  }else{
-  console.log("Não pode treinar: energia insuficiente!");
-    }
+console.log( "Exercício realizado:", nomeExercicio);
+console.log("Treino concluído");
+}else{
+console.log("Não pode treinar: energia insuficiente!");
   }
+}
 function descansar(){
   if(jogador.energia < 100){
     jogador.energia = jogador.energia +10;
