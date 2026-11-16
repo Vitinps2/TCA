@@ -120,8 +120,8 @@ console.log("energia", jogador.energia);
 function treinarcostas(nomeExercicio){
 if( jogador.energia >= 10){
 jogador.costas ++;
-jogador.biceps +=0,5;
-jogador.antibraco +=0,5;
+jogador.biceps +=0.5;
+jogador.antibraco +=0.5;
 jogador.energia -=10;
 console.log( "Exercício realizado:", nomeExercicio);
 console.log("Treino concluído");
