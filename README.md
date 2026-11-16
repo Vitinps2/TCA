@@ -25,7 +25,7 @@ class Meutreino{
 
   menucostas(){
     let exercicio = prompt( 
-      "Escolha seu exercicio para as costas/n" +
+      "Escolha seu exercicio para as costas\n" +
       "1 - Puxada alta\n" +
       "2 - Barra fixa\n" +
       "3 - Remada baixa\n" +
