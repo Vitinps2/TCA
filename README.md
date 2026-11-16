@@ -49,7 +49,7 @@ class Meutreino{
   }
 menupeito(){
     let exercicio = prompt( 
-      "Escolha seu exercicio para as costas\n" +
+      "Escolha seu exercicio para o peiot\n" +
       "1 - Supino reto\n" +
       "2 - Supino inclinado\n" +
       "3 - Supino declinado\n" +
@@ -158,11 +158,11 @@ console.log("Treino concluído");
 console.log("Não pode treinar: energia insuficiente!");
 	}
 }
-function treinarpeito(){
+function treinarpeito(nomeExercicio){
 if( jogador.energia >= 10){
 jogador.peito ++; 
-  jogador.triceps += 0,5;
-  jogador.ombro += 0,5;
+  jogador.triceps += 0.5;
+  jogador.ombro += 0.5;
   jogador.energia -= 10;
   console.log( "Exercício realizado:", nomeExercicio);
   console.log("Treino concluído");
