@@ -23,9 +23,6 @@ class novojogador {
 }
 let jogador = new novojogador(nome, 100, 0, 0, 0, 0, 0, 0, 0, 0 , 0, 0, 0)
 let escolha = "";
-while( escolha != "0"){
-let escolha = "";
-while( escolha != "0"){
 
 escolha = prompt( "Bem vindo a escolha de músculos!\n" +
  "1 - treinar costas!\n"+
