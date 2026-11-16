@@ -215,6 +215,26 @@ menupeito(){
 	console.log("Exercicio invalido!");
                     } 
                   }
+				menuposterior(){
+                       let exercicio = prompt( 
+                         "Escolha seu exercicio para o posterior!\n" +
+                         "1 -  Stiff\n" +
+                         "2 - Mesa flexora em pé\n" +
+                         "3 - Levantamento terra\n" 
+                       );
+                       if(exercicio == "1"){
+                         treinarposterior("Stiff");
+                       }
+                       else if(exercicio == "2"){
+                         treinarposterior("Mesa flexora em pé");
+                       }
+                       else if(exercicio == "3"){
+                         treinarposterior("Levantamento terra");
+                       }
+                       else{
+	console.log("Exercicio invalido!");
+                         } 
+                       }         
   }
   
 let  menu = new Meutreino()
