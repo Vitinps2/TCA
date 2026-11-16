@@ -131,7 +131,7 @@ console.log( "Pode treinar")
 console.log("Não pode treinar")
 	}
 }
-function treinartrices(){
+function treinartriceps(){
 if( jogador.energia >= 5 ){
 jogador.triceps ++;
 jogador.energia -=5;
