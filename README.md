@@ -21,6 +21,34 @@ class novojogador {
 	this.panturilha = panturilha;
 	}
 }
+class Meutreino{
+
+  menucostas(){
+    let exercicio = prompt( 
+      "Escolha seu exercicio para as costas/n" +
+      "1 - Puxada alta\n" +
+      "2 - Barra fixa\n" +
+      "3 - Remada baixa\n" +
+      "4 - Pulldown\n"
+    );
+    if(exercicio == "1"){
+      treinarcostas("Puxada alta");
+    }
+    else if(exercicio == "2"){
+      treinarcostas("Barra fixa");
+    }
+    else if(exercicio == "3"){
+      treinarcostas("Remada baixa");
+    }
+    else if(exercicio == "4"){
+      treinarcostas("Pulldown");
+    } 
+	else{
+	console.log("Exercicio invalido!");
+	}
+  }
+}
+let  menu = new Meutreino()
 let jogador = new novojogador(nome, 100, 0, 0, 0, 0, 0, 0, 0, 0 , 0, 0, 0)
 let escolha = "";
 while( escolha != "0"){
@@ -73,35 +101,6 @@ console.log("Obrigado por jogar!")
 }else{
 console.log("Opção invalida!")
 }
-
-class Meutreino{
-
-  menucostas(){
-    let Exercicio = prompt( 
-      "Escolha seu exercicio para as costas/n" +
-      "1 - Puxada alta\n" +
-      "2 - Barra fixa\n" +
-      "3 - Remada baixa\n" +
-      "4 - Pulldown\n"
-    );
-    if(Exercicio == "1"){
-      treinarcostas("Puxada alta");
-    }
-    else if(Exercicio == "2"){
-      treinarcostas("Barra fixa");
-    }
-    else if(Exercicio == "3"){
-      treinarcostas("Remada baixa");
-    }
-    else if(Exercicio == "4"){
-      treinarcostas("Pulldown");
-    } 
-	else{
-	console.log("Exercicio invalido!");
-	}
-  }
-}
-let  menu = new Meutreino()
 
 console.clear();
 console.log("nome", jogador.nome);
