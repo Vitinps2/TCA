@@ -155,6 +155,46 @@ menupeito(){
 	console.log("Exercicio invalido!");
               } 
             }
+			 menuabdomen(){
+              let exercicio = prompt( 
+                "Escolha seu exercicio para o abdomen!\n" +
+                "1 - Abdominal supra\n" +
+                "2 - Abdominal infra\n" +
+                "3 - O bliquo\n" 
+              );
+              if(exercicio == "1"){
+                treinarabdomen("Abdominal supra");
+              }
+              else if(exercicio == "2"){
+                treinarabdomen("Abdominal infra");
+              }
+              else if(exercicio == "3"){
+                treinarabdomen("Obliquo");
+              }
+              else{
+	console.log("Exercicio invalido!");
+                } 
+              }
+			   menupanturilha(){
+                let exercicio = prompt( 
+                  "Escolha seu exercicio para o panturilha!\n" +
+                  "1 - Panturilha em pé no hack\n" +
+                  "2 - Panturilha sentado\n" +
+                  "3 - Panturilha em pé no legg 45\n" 
+                );
+                if(exercicio == "1"){
+                  treinarpanturilha("Panturilha em pé no hack");
+                }
+                else if(exercicio == "2"){
+                  treinarpanturilha("Panturilha sentado");
+                }
+                else if(exercicio == "3"){
+                  treinarpanturilha("Panturilha em pé no legg 45");
+                }
+                else{
+	console.log("Exercicio invalido!");
+                  } 
+                }
   }
   
 let  menu = new Meutreino()
@@ -194,19 +234,19 @@ if(escolha == "1"){
 }else if(escolha == "6"){
 	menu.menuantebraco();
 }else if(escolha == "7"){
-	treinarabdomen();
+	menu.menuabdomen();
 }else if(escolha == "8"){
-	treinarquadricipes();
+	menu.menuquadricipes();
 }else if(escolha == "9"){
-	treinarposterior();
+	menu.menuposterior();
 }else if(escolha == "10"){
-	treinargluteo();
+	menu.menugluteo();
 }else if(escolha == "11"){	
-	treinarpanturilha();
+	menu.menupanturilha();
 }else if( escolha == "12"){
   descansar();
 }else if ( escolha == "0"){
-console.log("Obrigado por jogar!")
+console.log("Saindo do jogo!")
 }else{
 console.log("Opção invalida!")
 }
