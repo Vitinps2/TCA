@@ -77,25 +77,28 @@ console.log("Opção invalida!")
 class Meutreino{
 
   menucostas(){
-    let exercicio = prompt( 
+    let Exercicio = prompt( 
       "Escolha seu exercicio para as costas/n" +
-      "1 - Puxada alta/n" +
-      "2 - Barra fixa/n" +
-      "3 - Remada baixa/n" +
-      "4 - Pulldown/n"
+      "1 - Puxada alta\n" +
+      "2 - Barra fixa\n" +
+      "3 - Remada baixa\n" +
+      "4 - Pulldown\n"
     );
-    if(exercicio == "1"){
+    if(Exercicio == "1"){
       treinarcostas("Puxada alta");
     }
-    else if(exercicio == "2"){
+    else if(Exercicio == "2"){
       treinarcostas("Barra fixa");
     }
-    else if(exercicio == "3"){
+    else if(Exercicio == "3"){
       treinarcostas("Remada baixa");
     }
-    else if(exercicio == "4"){
+    else if(Exercicio == "4"){
       treinarcostas("Pulldown");
-    }
+    } 
+	else{
+	console.log("Exercicio invalido!");
+	}
   }
 }
 let  menu = new Meutreino()
