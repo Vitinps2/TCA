@@ -47,7 +47,36 @@ class Meutreino{
 	console.log("Exercicio invalido!");
 	}
   }
-}
+menupeito(){
+    let exercicio = prompt( 
+      "Escolha seu exercicio para as costas\n" +
+      "1 - Supino reto\n" +
+      "2 - Supino inclinado\n" +
+      "3 - Supino declinado\n" +
+      "4 - Voador\n" +
+      "5 - Crossover\n"
+    );
+    if(exercicio == "1"){
+      treinarpeito("Supino reto");
+    }
+    else if(exercicio == "2"){
+      treinarpeito("Supino inclinado");
+    }
+    else if(exercicio == "3"){
+      treinarpeito("Supino declinado");
+    }
+    else if(exercicio == "4"){
+      treinarpeito("Voador");
+    }
+    else if(exercicio == "5"){
+      treinarpeito("Crossover")
+    }
+    else{
+	console.log("Exercicio invalido!");
+      } 
+    }
+  }
+  
 let  menu = new Meutreino()
 let jogador = new novojogador(nome, 100, 0, 0, 0, 0, 0, 0, 0, 0 , 0, 0, 0)
 let escolha = "";
@@ -75,7 +104,7 @@ if(typeof escolha == "string"){
 if(escolha == "1"){
 	menu.menucostas();
 }else if(escolha == "2"){
-	treinarpeito();
+	menu.menupeito();
 }else if(escolha == "3"){
 	treinarombro();
 }else if(escolha == "4"){
@@ -131,13 +160,16 @@ console.log("Não pode treinar: energia insuficiente!");
 }
 function treinarpeito(){
 if( jogador.energia >= 10){
-jogador.peito ++;
-jogador.energia -=10;
-console.log( "Pode treinar")
-}else{
-console.log("Não pode treinar")
-	}
-}
+jogador.peito ++; 
+  jogador.triceps += 0,5;
+  jogador.ombro += 0,5;
+  jogador.energia -= 10;
+  console.log( "Exercício realizado:", nomeExercicio);
+  console.log("Treino concluído");
+  }else{
+  console.log("Não pode treinar: energia insuficiente!");
+    }
+  }
 function treinarquadricipes(){
 if( jogador.energia >= 10){
 jogador.quadricipes ++;
