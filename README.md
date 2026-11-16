@@ -43,7 +43,7 @@ escolha = prompt( "Bem vindo a escolha de músculos!\n" +
 );
 
 if(escolha == "1"){
-	treinarcostas();
+	menu.menucostas();
 }else if(escolha == "2"){
 	treinarpeito();
 }else if(escolha == "3"){
@@ -71,6 +71,33 @@ console.log("Obrigado por jogar!")
 }else{
 console.log("Opção invalida!")
 }
+
+class Meutreino{
+
+  menucostas(){
+    let exercicio = prompt( 
+      "Escolha seu exercicio para as costas/n" +
+      "1 - Puxada alta/n" +
+      "2 - Barra fixa/n" +
+      "3 - Remada baixa/n" +
+      "4 - Pulldown/n"
+    );
+    if(exercicio == "1"){
+      treinarcostas("Puxada alta");
+    }
+    else if(exercicio == "2"){
+      treinarcostas("Barra fixa");
+    }
+    else if(exercicio == "3"){
+      treinarcostas("Remada baixa");
+    }
+    else if(exercicio == "4"){
+      treinarcostas("Pulldown");
+    }
+  }
+}
+let  menu = new Menutreino()
+
 console.clear();
 console.log("nome", jogador.nome);
 console.log("costas", jogador.costas);
