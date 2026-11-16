@@ -75,6 +75,26 @@ menupeito(){
 	console.log("Exercicio invalido!");
       } 
     }
+	 menuombro(){
+      let exercicio = prompt( 
+        "Escolha seu exercicio para o ombro!\n" +
+        "1 - Elevação lateral\n" +
+        "2 - Desenvolvimento\n" +
+        "3 - Voador inverso\n" 
+      );
+      if(exercicio == "1"){
+        treinarombro("Elevação lateral");
+      }
+      else if(exercicio == "2"){
+        treinarombro("Desenvolvimento");
+      }
+      else if(exercicio == "3"){
+        treinarombro("Voador inverso");
+      }
+      else{
+	console.log("Exercicio invalido!");
+        } 
+      }
   }
   
 let  menu = new Meutreino()
@@ -106,7 +126,7 @@ if(escolha == "1"){
 }else if(escolha == "2"){
 	menu.menupeito();
 }else if(escolha == "3"){
-	treinarombro();
+	menu.menuombro();
 }else if(escolha == "4"){
 	treinartriceps();
 }else if(escolha == "5"){
@@ -188,15 +208,16 @@ console.log( "Pode treinar")
 console.log("Não pode treinar")
 	}
 }
-function treinarombro(){
+function treinarombro(nomeExercicio){
 if( jogador.energia >= 5){
 jogador.ombro ++;
 jogador.energia -=5;
-console.log( "Pode treinar")
-}else{
-console.log("Não pode treinar")
-	}
-}
+ console.log( "Exercício realizado:", nomeExercicio);
+  console.log("Treino concluído");
+  }else{
+  console.log("Não pode treinar: energia insuficiente!");
+    }
+  }
 function treinartriceps(){
 if( jogador.energia >= 5 ){
 jogador.triceps ++;
