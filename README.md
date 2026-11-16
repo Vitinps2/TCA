@@ -4,22 +4,26 @@ let nomeJogo = "Bebezinho Gym simulator";
 
 let nome = prompt("Bem vindo a " + nomeJogo + "!\nDigite o nome do seu personagem:");
 
-let jogador = {
-	nome:nome,
-	dinheiro: 0,
-	energia: 100,
-	costas: 0,
-	peito:0,
-	ombro:0,
-	tricipes:0,
-	bicepes:0,
-	antibraco:0,
-	abdomen:0,
-	quadricipes:0,
-	posterior:0,
-	gluteo:0,
-	panturilha:0
-	};
+class novojogador {
+  constructor(nome,energia,costas,peito,ombro,triceps,biceps,antibraco,abdomen,quadricipes,posterior,gluteo,panturilha){
+  this.nome = nome;
+  this.energia = energia;
+  this.costas = costas;
+	this.peito=  peito;
+	this.ombro = ombro;
+	this.triceps = triceps;
+	this.biceps =  biceps;
+	this.antibraco = antibraco;
+	this.abdomen =  abdomen;
+	this.quadricipes = quadricipes;
+	this.posterior =  posterior;
+	this.gluteo =  gluteo;
+	this.panturilha = panturilha;
+	}
+}
+let jogador = new novojogador(nome, 100, 0, 0, 0, 0, 0, 0, 0, 0 , 0, 0, 0)
+let escolha = "";
+while( escolha != "0"){
 let escolha = "";
 while( escolha != "0"){
 
