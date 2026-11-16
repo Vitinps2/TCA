@@ -138,7 +138,7 @@ class Meutreino {
             "Escolha seu exercicio para o abdomen!\n" +
             "1 - Abdominal supra\n" +
             "2 - Abdominal infra\n" +
-            "3 - O bliquo\n"
+            "3 - Obliquo\n"
         );
         if (exercicio == "1") {
             treinarabdomen("Abdominal supra");
