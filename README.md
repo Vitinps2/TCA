@@ -5,7 +5,7 @@ let nomeJogo = "Bebezinho Gym simulator";
 let nome = prompt("Bem vindo a " + nomeJogo + "!\nDigite o nome do seu personagem:");
 
 class novojogador {
-  constructor(nome,energia,costas,peito,ombro,triceps,biceps,antebraco,abdomen,quadricipes,posterior,gluteo,panturilha){
+  constructor(nome,energia,costas,peito,ombro,triceps,biceps,antebraco,abdomen,quadriceps,posterior,gluteo,panturilha){
   this.nome = nome;
   this.energia = energia;
   this.costas = costas;
@@ -15,7 +15,7 @@ class novojogador {
 	this.biceps =  biceps;
 	this.antebraco = antebraco;
 	this.abdomen =  abdomen;
-	this.quadricipes = quadricipes;
+	this.quadriceps = quadriceps;
 	this.posterior =  posterior;
 	this.gluteo =  gluteo;
 	this.panturilha = panturilha;
@@ -177,7 +177,7 @@ menupeito(){
               }
 			   menupanturilha(){
                 let exercicio = prompt( 
-                  "Escolha seu exercicio para o panturilha!\n" +
+                  "Escolha seu exercicio para a panturilha!\n" +
                   "1 - Panturilha em pé no hack\n" +
                   "2 - Panturilha sentado\n" +
                   "3 - Panturilha em pé no legg 45\n" 
@@ -195,6 +195,26 @@ menupeito(){
 	console.log("Exercicio invalido!");
                   } 
                 }
+				menuquadricips(){
+                  let exercicio = prompt( 
+                    "Escolha seu exercicio para o quadriceps!\n" +
+                    "1 -  Agachamento no hack pendulo\n" +
+                    "2 - Legg 45 \n" +
+                    "3 - Cadeira extensora\n" 
+                  );
+                  if(exercicio == "1"){
+                    treinarquadriceps("Agachamento no hack pendulo");
+                  }
+                  else if(exercicio == "2"){
+                    treinarquadriceps("Legg 45");
+                  }
+                  else if(exercicio == "3"){
+                    treinarquadriceps("Cadeira extensora");
+                  }
+                  else{
+	console.log("Exercicio invalido!");
+                    } 
+                  }
   }
   
 let  menu = new Meutreino()
@@ -210,7 +230,7 @@ escolha = prompt( "Bem vindo a escolha de músculos!\n" +
  "5 - treinar biceps!\n" + 
 "6 - treinar antebraco!\n" + 
 "7 - treinar abdomen!\n" + 
-"8 - treinar quadricipes!\n" + 
+"8 - treinar quadriceps!\n" + 
 "9 - treinar posterior!\n" + 
 "10 - treinar gluteo!\n" + 
 "11 - treinar panturilha!\n" +
@@ -236,7 +256,7 @@ if(escolha == "1"){
 }else if(escolha == "7"){
 	menu.menuabdomen();
 }else if(escolha == "8"){
-	menu.menuquadricipes();
+	menu.menuquadriceps();
 }else if(escolha == "9"){
 	menu.menuposterior();
 }else if(escolha == "10"){
@@ -260,7 +280,7 @@ console.log("tricipes", jogador.triceps);
 console.log("bicepes", jogador.biceps);
 console.log("antebraco", jogador.antebraco);
 console.log("abdomen", jogador.abdomen);
-console.log("quadricipes", jogador.quadricipes);
+console.log("quadriceps", jogador.quadriceps);
 console.log("posterior", jogador.posterior);
 console.log("gluteo", jogador.gluteo);
 console.log("panturilha", jogador.panturilha);
@@ -290,9 +310,9 @@ jogador.peito ++;
   console.log("Não pode treinar: energia insuficiente!");
     }
   }
-function treinarquadricipes(nomeExercicio){
+function treinarquadriceps(nomeExercicio){
 if( jogador.energia >= 10){
-jogador.quadricipes ++;
+jogador.quadriceps ++;
 jogador.panturilha += 0.5;
 jogador.energia -=10;
 console.log( "Pode treinar")
