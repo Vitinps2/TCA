@@ -145,8 +145,8 @@ console.log("Não pode treinar")
 }
 function treinarpeito(){
 if( jogador.energia >= 10){
-jogador.peito = jogador.peito +1;
-jogador.energia = jogador.energia -10;
+jogador.peito ++;
+jogador.energia -=10;
 console.log( "Pode treinar")
 }else{
 console.log("Não pode treinar")
@@ -154,8 +154,8 @@ console.log("Não pode treinar")
 }
 function treinarquadricipes(){
 if( jogador.energia >= 10){
-jogador.quadricipes = jogador.quadricipes +1;
-jogador.energia = jogador.energia -10;
+jogador.quadricipes ++;
+jogador.energia -=10;
 console.log( "Pode treinar")
 }else{
 console.log("Não pode treinar")
@@ -163,8 +163,8 @@ console.log("Não pode treinar")
 }
 function treinarposterior(){
 if( jogador.energia >= 10){
-jogador.posterior = jogador.posterior +1;
-jogador.energia = jogador.energia -10;
+jogador.posterior ++;
+jogador.energia -=10;
 console.log( "Pode treinar")
 }else{
 console.log("Não pode treinar")
@@ -172,8 +172,8 @@ console.log("Não pode treinar")
 }
 function treinarombro(){
 if( jogador.energia >= 5){
-jogador.ombro = jogador.ombro +1;
-jogador.energia = jogador.energia -5;
+jogador.ombro ++;
+jogador.energia -=5;
 console.log( "Pode treinar")
 }else{
 console.log("Não pode treinar")
@@ -181,8 +181,8 @@ console.log("Não pode treinar")
 }
 function treinartricepes(){
 if( jogador.energia >= 5 ){
-jogador.tricepes = jogador.tricepes +1;
-jogador.energia = jogador.energia -5;
+jogador.tricepes ++;
+jogador.energia -=5;
 console.log( "Pode treinar")
 }else{
 console.log("Não pode treinar")
@@ -190,8 +190,8 @@ console.log("Não pode treinar")
 }
 function treinarbicepes(){
 if( jogador.energia >= 5){
-jogador.bicepes = jogador.bicepes +1;
-jogador.energia = jogador.energia -5;
+jogador.bicepes ++;
+jogador.energia -=5;
 console.log( "Pode treinar")
 }else{
 console.log("Não pode treinar")
@@ -199,8 +199,8 @@ console.log("Não pode treinar")
 }
 function treinarantibraco(){
 if( jogador.energia >= 5){
-jogador.antibraco = jogador.antibraco +1;
-jogador.energia = jogador.energia -5;
+jogador.antibraco ++;
+jogador.energia -=5;
 console.log( "Pode treinar")
 }else{
 console.log("Não pode treinar")
@@ -208,8 +208,8 @@ console.log("Não pode treinar")
 }
 function treinargluteo(){
 if( jogador.energia >= 10){
-jogador.gluteo = jogador.gluteo +1;
-jogador.energia = jogador.energia -10;
+jogador.gluteo ++;
+jogador.energia -=10;
 console.log( "Pode treinar")
 }else{
 console.log("Não pode treinar")
@@ -217,8 +217,8 @@ console.log("Não pode treinar")
 }
 function treinarpanturilha(){
 if( jogador.energia >= 5){
-jogador.panturilha = jogador.panturilha +1;
-jogador.energia = jogador.energia -5;
+jogador.panturilha ++;
+jogador.energia -=5;
 console.log( "Pode treinar")
 }else{
 console.log("Não pode treinar")
@@ -226,8 +226,8 @@ console.log("Não pode treinar")
 }
 function treinarabdomen(){
 if( jogador.energia >= 5){
-jogador.abdomen = jogador.abdomen +1;
-jogador.energia = jogador.energia -5;
+jogador.abdomen ++;
+jogador.energia -=5;
 console.log( "Pode treinar")
 }else{
 console.log("Não pode treinar")
@@ -240,8 +240,7 @@ function descansar(){
     if(jogador.energia > 100){
       jogador.energia = 100;
     }
-    
-    console.log("Você descansou!")
+    console.log("Você descansou!)"
   }else{
     console.log("Sua energia está no máximo!")
   }
