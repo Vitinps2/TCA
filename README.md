@@ -237,7 +237,7 @@ function descansar(){
     if(jogador.energia > 100){
       jogador.energia = 100;
     }
-    console.log("Você descansou!)"
+    console.log("Você descansou!")
   }else{
     console.log("Sua energia está no máximo!")
   }
