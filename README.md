@@ -117,13 +117,16 @@ console.log("gluteo", jogador.gluteo);
 console.log("panturilha", jogador.panturilha);
 console.log("energia", jogador.energia);
 }
-function treinarcostas(){
+function treinarcostas(nomeExercicio){
 if( jogador.energia >= 10){
-jogador.costas = jogador.costas +1;
-jogador.energia = jogador.energia -10;
-console.log( "Pode treinar")
+jogador.costas ++;
+jogador.biceps +=0,5;
+jogador.antibraco +=0,5;
+jogador.energia -=10;
+console.log( "Exercício realizado:", nomeExercicio);
+console.log("Treino concluído");
 }else{
-console.log("Não pode treinar")
+console.log("Não pode treinar: energia insuficiente!");
 	}
 }
 function treinarpeito(){
