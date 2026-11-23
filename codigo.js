@@ -4,7 +4,7 @@ let nomeJogo = "Bebezinho Gym simulator";
 let nome = prompt("Bem vindo a " + nomeJogo + "!\nDigite o nome do seu personagem:");
 
 class novojogador {
-    constructor(nome, energia, costas, peito, ombro, triceps, biceps, antebraco, abdomen, quadriceps, posterior, gluteo, panturilha) {
+    constructor(nome, energia, costas, peito, ombro, triceps, biceps, antebraco, abdomen, quadriceps, posterior, gluteo, panturrilha) {
         this.nome = nome;
         this.energia = energia;
         this.costas = costas;
@@ -17,7 +17,7 @@ class novojogador {
         this.quadriceps = quadriceps;
         this.posterior = posterior;
         this.gluteo = gluteo;
-        this.panturilha = panturilha;
+        this.panturrilha = panturrilha;
     }
 }
 class Meutreino {
@@ -44,7 +44,7 @@ class Meutreino {
     }
     menupeito() {
         let exercicio = prompt(
-            "Escolha seu exercicio para o peiot\n" +
+            "Escolha seu exercicio para o peito\n" +
             "1 - Supino reto\n" +
             "2 - Supino inclinado\n" +
             "3 - Supino declinado\n" +
@@ -167,19 +167,19 @@ class Meutreino {
             console.log("Exercicio invalido!");
         }
     }
-    menupanturilha() {
+    menupanturrilha() {
         let exercicio = prompt(
-            "Escolha seu exercicio para a panturilha!\n" +
-            "1 - Panturilha em pé no hack\n" +
-            "2 - Panturilha sentado\n" +
-            "3 - Panturilha em pé no legg 45\n"
+            "Escolha seu exercicio para a panturrilha!\n" +
+            "1 - panturrilha em pé no hack\n" +
+            "2 - panturrilha sentado\n" +
+            "3 - panturrilha em pé no legg 45\n"
         );
         if (exercicio == "1") {
-            treinarpanturilha("Panturilha em pé no hack");
+            treinarpanturrilha("panturrilha em pé no hack");
         } else if (exercicio == "2") {
-            treinarpanturilha("Panturilha sentado");
+            treinarpanturrilha("panturrilha sentado");
         } else if (exercicio == "3") {
-            treinarpanturilha("Panturilha em pé no legg 45");
+            treinarpanturrilha("panturrilha em pé no legg 45");
         } else {
             console.log("Exercicio invalido!");
         }
@@ -236,7 +236,7 @@ while (escolha != "0") {
         "8 - treinar quadriceps!\n" +
         "9 - treinar posterior!\n" +
         "10 - treinar gluteo!\n" +
-        "11 - treinar panturilha!\n" +
+        "11 - treinar panturrilha!\n" +
         "0 - sair\n" +
         "12 - descansar\n" +
         "Digite o número de qual músculo você gostaria de começar:"
@@ -266,7 +266,7 @@ while (escolha != "0") {
     } else if (escolha == "10") {
         menu.menugluteo();
     } else if (escolha == "11") {
-        menu.menupanturilha();
+        menu.menupanturrilha();
     } else if (escolha == "12") {
         descansar();
     } else if (escolha == "0") {
@@ -280,14 +280,14 @@ while (escolha != "0") {
     console.log("costas", jogador.costas);
     console.log("peito", jogador.peito);
     console.log("ombro", jogador.ombro);
-    console.log("tricipes", jogador.triceps);
-    console.log("bicepes", jogador.biceps);
+    console.log("triceps", jogador.triceps);
+    console.log("biceps", jogador.biceps);
     console.log("antebraco", jogador.antebraco);
     console.log("abdomen", jogador.abdomen);
     console.log("quadriceps", jogador.quadriceps);
     console.log("posterior", jogador.posterior);
     console.log("gluteo", jogador.gluteo);
-    console.log("panturilha", jogador.panturilha);
+    console.log("panturrilha", jogador.panturrilha);
     console.log("energia", jogador.energia);
 }
 
@@ -320,7 +320,7 @@ function treinarpeito(nomeExercicio) {
 function treinarquadriceps(nomeExercicio) {
     if (jogador.energia >= 10) {
         jogador.quadriceps++;
-        jogador.panturilha += 0.5;
+        jogador.panturrilha += 0.5;
         jogador.energia -= 10;
         console.log("Exercício realizado:", nomeExercicio);
         console.log("Treino concluído");
@@ -397,9 +397,9 @@ function treinargluteo(nomeExercicio) {
     }
 }
 
-function treinarpanturilha(nomeExercicio) {
+function treinarpanturrilha(nomeExercicio) {
     if (jogador.energia >= 5) {
-        jogador.panturilha++;
+        jogador.panturrilha++;
         jogador.energia -= 5;
         console.log("Exercício realizado:", nomeExercicio);
         console.log("Treino concluído");
